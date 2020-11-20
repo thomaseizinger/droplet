@@ -48,6 +48,7 @@ pub mod opcodes;
 pub mod script;
 mod transaction;
 pub mod slip77;
+pub mod bip143;
 
 // re-export bitcoin deps which we re-use
 pub use bitcoin::{bech32, hashes, secp256k1};
