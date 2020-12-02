@@ -34,6 +34,7 @@ extern crate serde_crate as serde;
 #[macro_use]
 mod internal_macros;
 pub mod address;
+pub mod bip143;
 pub mod blech32;
 mod block;
 pub mod confidential;
@@ -62,5 +63,5 @@ pub use script::Script;
 pub use transaction::{
     AssetIssuance, ConfidentialAssetIssuance, ConfidentialTxOut, ExplicitAsset,
     ExplicitAssetIssuance, ExplicitTxOut, ExplicitValue, OutPoint, PeginData, PegoutData,
-    Transaction, TxIn, TxInWitness, TxOut, TxOutWitness, UnblindedTxOut,
+    SigHashType, Transaction, TxIn, TxInWitness, TxOut, TxOutWitness, UnblindedTxOut,
 };
