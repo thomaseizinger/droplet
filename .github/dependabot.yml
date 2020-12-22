@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: cargo
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: Australia/Brisbane
+    allow:
+      - dependency-type: direct
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: Australia/Brisbane
+  - package-ecosystem: npm
+    directory: "/waves"
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: Australia/Brisbane
